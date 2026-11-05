@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--dsw-alias-label-primary);
+}
+
+.description {
+  margin: 0;
+  font-size: 13px;
+  color: var(--dsw-alias-label-secondary);
+  line-height: 1.5;
+}
+
+.serverList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  background: var(--dsw-alias-bg-module-platform);
+  border: 1px dashed var(--dsw-alias-border-l4);
+  border-radius: var(--dsw-radius-md);
+  text-align: center;
+  gap: 12px;
+}
+
+.emptyIcon {
+  color: var(--dsw-alias-label-tertiary);
+}
+
+.emptyTitle {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--dsw-alias-label-primary);
+}
+
+.emptyDescription {
+  margin: 0;
+  font-size: 13px;
+  color: var(--dsw-alias-label-tertiary);
+  max-width: 360px;
+}
+
+.deleteConfirmBody {
+  font-size: 14px;
+  color: var(--dsw-alias-label-primary);
+  line-height: 1.5;
+}
+
+.deleteConfirmFooter {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}

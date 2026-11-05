@@ -1,0 +1,164 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background: var(--dsw-alias-bg-layer-2);
+  border: 0.5px solid var(--dsw-alias-border-l4);
+  border-radius: var(--dsw-radius-md);
+  transition: border-color 0.15s ease;
+}
+
+.card:hover {
+  border-color: var(--dsw-alias-border-l3);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.titleGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.name {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--dsw-alias-label-primary);
+  font-family: var(--dsw-font-mono, monospace);
+}
+
+.statusPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  background: var(--dsw-alias-bg-module-platform);
+  color: var(--dsw-alias-label-secondary);
+}
+
+.sourcePill {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: var(--dsw-radius-sm);
+  background: var(--dsw-alias-bg-module-platform);
+  color: var(--dsw-alias-label-tertiary);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.snippet {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: var(--dsw-alias-label-tertiary);
+  font-family: var(--dsw-font-mono, monospace);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 0.5px solid var(--dsw-alias-border-l4);
+}
+
+.errorBanner {
+  padding: 8px 12px;
+  border-radius: var(--dsw-radius-sm);
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--dsw-alias-state-error-primary);
+  font-size: 12px;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.probeSuccessBanner {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px 12px;
+  border-radius: var(--dsw-radius-sm);
+  background: rgba(34, 197, 94, 0.08);
+  border: 0.5px solid rgba(34, 197, 94, 0.2);
+  color: var(--dsw-alias-label-primary);
+  font-size: 12px;
+}
+
+.probeHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-weight: 500;
+  color: var(--dsw-alias-state-success-primary);
+}
+
+.probeMeta {
+  color: var(--dsw-alias-label-tertiary);
+  font-size: 11px;
+}
+
+.toolsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.toolsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--dsw-alias-label-secondary);
+}
+
+.toolGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.toolTag {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: var(--dsw-radius-sm);
+  background: var(--dsw-alias-bg-module-platform);
+  border: 0.5px solid var(--dsw-alias-border-l4);
+  font-size: 12px;
+  font-family: var(--dsw-font-mono, monospace);
+  color: var(--dsw-alias-label-primary);
+}
+
+.noTools {
+  font-size: 12px;
+  color: var(--dsw-alias-label-tertiary);
+  margin: 0;
+}

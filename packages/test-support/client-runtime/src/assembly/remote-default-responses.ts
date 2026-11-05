@@ -42,6 +42,9 @@ export const remoteDefaultResponses: RemoteTable = {
     // ui-settings-account bonus notice read and acknowledgement at signing in.
     'account/getUnnotifiedBonuses': ok(null),
     'account/ackBonusNotified': ok(true),
+    // mcp-manager probe and restart
+    'mcpManager/probe': ok({ ok: true, toolNames: [], durationMs: 0, closeConfirmed: true }),
+    'mcpManager/restart': ok(undefined),
   },
   // Stream endpoints the roster opens later than boot; declared so a spec that forgets the script gets a stream miss.
   streams: [
@@ -57,5 +60,7 @@ export const remoteDefaultResponses: RemoteTable = {
     'workspace/follow': openStream([{ type: 'baseline', value: { items: [], archivedSessionIds: [], pinnedSessionIds: [] } }]),
     // api-remote-access client `mountAccess`: the owner's access snapshot, then open.
     'remoteAccess/follow': openStream([{ type: 'baseline', owner: true }]),
+    // mcp-manager watch stream for ui-settings-mcp
+    'mcpManager/watch': openStream([]),
   },
 }

@@ -1,0 +1,127 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--dsw-alias-label-primary);
+}
+
+.hint {
+  font-size: 12px;
+  color: var(--dsw-alias-label-tertiary);
+  margin: 0;
+}
+
+.segmented {
+  display: flex;
+  gap: 8px;
+  padding: 3px;
+  background: var(--dsw-alias-bg-module-platform);
+  border-radius: var(--dsw-radius-md);
+}
+
+.segmentBtn {
+  flex: 1;
+  height: 30px;
+  border: none;
+  background: transparent;
+  border-radius: var(--dsw-radius-sm);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--dsw-alias-label-secondary);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.segmentBtn[data-active='true'] {
+  background: var(--dsw-alias-bg-layer-3);
+  color: var(--dsw-alias-label-primary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.textarea {
+  width: 100%;
+  min-height: 64px;
+  padding: 8px 12px;
+  border: 0.5px solid var(--dsw-alias-border-l4);
+  border-radius: var(--dsw-radius-md);
+  background: var(--dsw-alias-bg-layer-3);
+  color: var(--dsw-alias-label-primary);
+  font: inherit;
+  font-size: 13px;
+  font-family: var(--dsw-font-mono, monospace);
+  line-height: 1.4;
+  resize: vertical;
+}
+
+.textarea:focus-visible {
+  outline: none;
+  border-color: var(--dsw-alias-state-business-primary);
+}
+
+.kvContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.kvRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.kvInput {
+  flex: 1;
+}
+
+.errorBanner {
+  padding: 8px 12px;
+  border-radius: var(--dsw-radius-md);
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--dsw-alias-state-error-primary);
+  font-size: 13px;
+}
+
+.advancedToggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-top: 0.5px solid var(--dsw-alias-border-l4);
+  background: transparent;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  color: var(--dsw-alias-label-secondary);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.advancedPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  background: var(--dsw-alias-bg-module-platform);
+  border-radius: var(--dsw-radius-md);
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}

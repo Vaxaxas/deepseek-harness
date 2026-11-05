@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "MCP 服务器与工具",
+    "description": "管理外部 Model Context Protocol (MCP) 服务器、工具发现与运行时连接状态。"
+  }
+}
